@@ -1,0 +1,198 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    &__container {
+        height: 48px;
+    }
+    &__wrapper {
+        height: 100%;
+        display: flex;
+    }
+    &__logo {
+        width: 165px;
+        align-self: center;
+        // margin-bottom: 5px;
+        color: #000;
+        svg {
+            margin: 0;
+            padding: 0;
+        }
+        path {
+            margin: 0;
+            padding: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__finder {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px;
+        input {
+            display: inline;
+            width: 230px;
+            height: 32px;
+            background-color: var(--background-color);
+            border: none;
+            padding-left: 33px;
+            padding-right: 22px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            font-family: 'Roboto';
+            &:hover {
+                cursor: text;
+                background-color: #e1e3e6;
+            }
+            &:active {
+                background-color: #dae2ea;
+                border: none;
+                outline: none;
+            }
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+        input::-webkit-input-placeholder {
+                color: #818c99; 
+            }
+        input[type="search"]::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+            background: url('../img/icons/search-close.svg');
+        }
+        &-placeholder {
+            display: flex;
+            position: absolute;
+            left: 0;
+            padding-right: 40px;
+            padding-left: 8px;
+            height: 32px;
+            &-text {
+                display: block;
+                margin-bottom: 0;
+                color: #fff;
+                margin-left: 8px;
+                font-size: 15px;
+                line-height: 20px;
+                align-self: center;
+                font-weight: 500;
+                font-family: 'Roboto';
+            }
+        }
+    }
+    &__notifications {
+        width: 48px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            cursor: pointer;
+            background-color: var(--hover-color);
+        }
+        &-icon {
+            svg path {
+                color: #6f7985;
+            }
+        }
+    }
+    &__audio {
+        width: 502px;
+        height: 100%;
+        &-wrapper {
+            display: flex;
+            padding: 0 20px 0 8px;
+            max-width: 358px;
+            height: 100%;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+                background-color: var(--hover-color);
+            }
+        }
+        &-btns {
+            display: flex;
+            padding-top: 9px;
+            align-items: center;
+            height: 100%;
+            div {
+                height: 100%;
+                border: none;
+                padding-right: 5px;
+                &:nth-child(3) {
+                    padding-right: 0;
+                }
+                svg path {
+                    color: #99a2ad;
+                    &:hover {
+                        color: #818c99;
+                    }
+                }
+             
+            }
+        }
+        &-title {
+            padding-left: 15px;
+            line-height: 24px;
+            font-size: 14px;
+            color: #626d7a;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-service {
+            width: 48px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+          button {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            border: none;
+            &:hover {
+                background-color: var(--hover-color);
+            }
+            svg path {
+                color: #818c99;
+            }
+          }
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            width: 68px;
+            height: 100%;
+            &:hover {
+                cursor: pointer;
+                background-color: var(--hover-color);
+            }
+            img {
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+        }
+        &-arrow {
+            margin: 0 8px 0 6px;
+            svg {
+                color: #aeb7c2;
+            }
+        }
+    }
+}
