@@ -1,0 +1,37 @@
+.music {
+    position: relative;
+    margin-top: 20px;
+    background-color: #fff;
+    z-index: 5;
+    width: 550px;
+    height: 418px;
+    border-radius: 12px;
+    &__wrapper {
+       padding: 8px;
+    }
+    &__header {
+        display: flex;
+    }
+    &__item {
+        display: flex;
+        border-radius: 8px;
+        align-items: center;
+        margin-top: 8px;
+        margin-left: 12px;
+        padding: 0px 8px;
+        &:nth-child(1) {
+            border: 0.5px solid #dce1e6;
+        }
+        &_img {
+            margin-right: 6px;
+            svg {
+                fill: #346297;
+              }
+        }
+      &_text {
+        color: #346297;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+}
