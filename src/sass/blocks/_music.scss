@@ -22,7 +22,7 @@
     padding: 0px 8px;
 	&:hover {
 		cursor: pointer;
-		background-color: #e1e3e6;
+		background-color: var(--hover-color-darkgrey);
 		transition: 0.3s all;
 	}
 	&:nth-child(5) {
@@ -40,7 +40,7 @@
         }
 		.music__item_text {
 			padding-top: 0;
-			color: #346297;
+			color: var(--text-color-blue);
 			font-size: 14px;
 			line-height: 20px;
 		}
@@ -55,7 +55,7 @@
         }
       &_text {
 		// padding-top: 3px;
-        color: #818c99;
+        color: var(--text-color-grey);
         font-size: 14px;
         line-height: 20px;
       }
@@ -78,8 +78,8 @@
 	}
 	&__column_wrapper {
 		display: grid;
-		grid-template: minmax(57px, auto) / repeat(2, 255px);
-		padding: 8px 12px 0 12px;
+		grid-template: minmax(57px, auto) / repeat(2, 260px);
+		padding: 4px 9px 4px 4px;;
 	}
 	&__column_left {
 
@@ -118,7 +118,7 @@
 			line-height: 16px;
     		font-size: 13px;
 			font-weight: 400;
-			color: #818c99;
+			color: var(--text-color-grey);
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -130,7 +130,7 @@
 		margin-left: 13px;
 		font-size: 13px;
 		line-height: 16px;
-		color: #818c99;
+		color: var(--text-color-grey);
 	}
 	&__btn {
 		display: flex;
@@ -139,17 +139,17 @@
 		justify-content: center;
 		margin-top: 12px;
 		padding: 0px 16px;
-		color: #346297;
+		color: var(--text-color-blue);
 		border: none;
 		border-radius: 8px;
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: 500;
-		background-color: #e5ebf1;
+		background-color: var(--btn-background-lightblue);
 		grid-column: 1/3;
 		&:hover {
 			cursor: pointer;
-			background-color: #dae2ea;
+			background-color: var(--btn-background-grey);
 			transition: 0.3s;
 		}
 		&-text {
@@ -169,6 +169,7 @@
 		svg {
 			color: #818c99;
 			width: 23px;
+			height: 45px;
 		}
 		&_content {
 			display: flex;
@@ -176,7 +177,7 @@
 			margin-left: 8px;
 			margin-right: 5px;
 			font-size: 13px;
-			color: #818c99;
+			color: var(--text-color-grey);
 			span {
 				margin: 0 5px;
 				margin-bottom: 5px;
@@ -184,17 +185,17 @@
 		}
 		&_dot {
 			font-size: 13px;
-			color: #818c99;
+			color: var(--text-color-grey);
 		}
 		&_change {
 			margin-bottom: 3px;
-			color: #2a5885;
+			color: var(--text-color-blue);
 			&:hover {
 				text-decoration: underline;
 			}
 			a {
 				font-size: 13px;
-				color: #2a5885;
+				color: var(--text-color-blue);
 				text-decoration: none;
 			}
 		}

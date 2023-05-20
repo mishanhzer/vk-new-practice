@@ -15,7 +15,6 @@
     &__logo {
         width: 165px;
         align-self: center;
-        // margin-bottom: 5px;
         color: #000;
         svg {
             margin: 0;
@@ -50,10 +49,10 @@
             font-family: 'Roboto';
             &:hover {
                 cursor: text;
-                background-color: #e1e3e6;
+                background-color: var(--hover-color-darkgrey);
             }
             &:active {
-                background-color: #dae2ea;
+                background-color: var(--btn-background-grey);
                 border: none;
                 outline: none;
             }
@@ -63,7 +62,7 @@
             }
         }
         input::-webkit-input-placeholder {
-                color: #818c99; 
+                color: var(--text-color-grey); 
             }
         input[type="search"]::-webkit-search-cancel-button {
             -webkit-appearance: none;
@@ -73,20 +72,14 @@
             display: flex;
             position: absolute;
             left: 0;
-            padding-right: 40px;
+            // padding-right: 40px;
             padding-left: 8px;
             height: 32px;
-            // &-text {
-            //     display: block;
-            //     margin-bottom: 0;
-            //     color: #fff;
-            //     margin-left: 8px;
-            //     font-size: 15px;
-            //     line-height: 20px;
-            //     align-self: center;
-            //     font-weight: 500;
-            //     font-family: 'Roboto';
-            // }
+            img {
+                display: block;
+                overflow: hidden;
+                width: 17px;
+            }
         }
     }
     &__notifications {
@@ -134,7 +127,7 @@
                 svg path {
                     color: #99a2ad;
                     &:hover {
-                        color: #818c99;
+                        color: var(--text-color-grey);
                     }
                 }
              
@@ -144,7 +137,7 @@
             padding-left: 15px;
             line-height: 24px;
             font-size: 14px;
-            color: #626d7a;
+            color: var(--text-color-darkgrey);
         }
     }
     &__menu {
