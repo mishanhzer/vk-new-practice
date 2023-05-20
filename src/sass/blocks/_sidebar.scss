@@ -42,7 +42,7 @@
         padding: 14px 0px 4px;
         font-size: 12px;
         text-align: left;
-        &-item {
+        &_item {
             padding-right: 10px;
             text-decoration: none;
             color: #818c99;
@@ -57,7 +57,7 @@
                     position: absolute;
                     top: 7px;
                     left: 30px;
-                    background: url('../img/icons/arrow2.png');
+                    background: url('../img/icons/sidebar/arrow2.png');
                     background-size: 7px 4px;
                     width: 7px;
                     height: 4px;

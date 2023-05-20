@@ -69,24 +69,24 @@
             -webkit-appearance: none;
             background: url('../img/icons/search-close.svg');
         }
-        &-placeholder {
+        &_placeholder {
             display: flex;
             position: absolute;
             left: 0;
             padding-right: 40px;
             padding-left: 8px;
             height: 32px;
-            &-text {
-                display: block;
-                margin-bottom: 0;
-                color: #fff;
-                margin-left: 8px;
-                font-size: 15px;
-                line-height: 20px;
-                align-self: center;
-                font-weight: 500;
-                font-family: 'Roboto';
-            }
+            // &-text {
+            //     display: block;
+            //     margin-bottom: 0;
+            //     color: #fff;
+            //     margin-left: 8px;
+            //     font-size: 15px;
+            //     line-height: 20px;
+            //     align-self: center;
+            //     font-weight: 500;
+            //     font-family: 'Roboto';
+            // }
         }
     }
     &__notifications {
@@ -99,7 +99,7 @@
             cursor: pointer;
             background-color: var(--hover-color);
         }
-        &-icon {
+        &_icon {
             svg path {
                 color: #6f7985;
             }
@@ -108,7 +108,7 @@
     &__audio {
         width: 502px;
         height: 100%;
-        &-wrapper {
+        &_wrapper {
             display: flex;
             padding: 0 20px 0 8px;
             max-width: 358px;
@@ -119,7 +119,7 @@
                 background-color: var(--hover-color);
             }
         }
-        &-btns {
+        &_btns {
             display: flex;
             padding-top: 9px;
             align-items: center;
@@ -140,7 +140,7 @@
              
             }
         }
-        &-title {
+        &_title {
             padding-left: 15px;
             line-height: 24px;
             font-size: 14px;
@@ -151,7 +151,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &-service {
+        &_service {
             width: 48px;
             height: 100%;
             display: flex;
@@ -171,7 +171,7 @@
             }
           }
         }
-        &-link {
+        &_link {
             display: flex;
             align-items: center;
             padding-left: 10px;
@@ -188,7 +188,7 @@
                 object-fit: cover;
             }
         }
-        &-arrow {
+        &_arrow {
             margin: 0 8px 0 6px;
             svg {
                 color: #aeb7c2;
