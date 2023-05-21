@@ -1,0 +1,42 @@
+.dialogs {
+    position: fixed;
+    right: 25px;
+    bottom: 0px;
+    width: 52px;
+    min-height: 50px;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    &__img {
+        height: 52px;
+        width: 52px;
+        padding: 6px;
+        border-radius: 8px 8px 0 0;
+        &:hover {
+            cursor: pointer;
+            background-color: var(--hover-color);
+            transition: 0.15s ease-out;
+        }
+        img {
+            width: 40px;
+            border-radius: 100%;
+        }
+    }
+    &__message {
+        // margin-top: 10px;
+        height: 38px;
+        display: flex;
+        &:hover {
+            cursor: pointer;
+            background-color: var(--hover-color);
+            transition: 0.15s ease-out;
+        }
+        &_img {
+            margin: 0 auto;
+            padding-top: 5px;
+            svg {
+                width: 16px;
+                fill: var(--text-color-grey);
+            }
+        }
+    }
+}

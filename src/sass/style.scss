@@ -21,7 +21,26 @@ body {
 }
 
 .space {
+    position: relative;
     margin-top: 48px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 550px 345px;
+    grid-template-rows: minmax(32px, auto);
+    column-gap: 16px;
+    row-gap: 16px;
+    // display: flex;
+    &__column1 {
+
+    }
+    &__column2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, minmax(32px, auto));
+        display: grid;
+        row-gap: 16px;
+    }
 }
 
 .divider {
@@ -35,3 +54,7 @@ body {
 @import 'blocks/sidebar';
 @import 'blocks/top-block';
 @import 'blocks/music';
+@import 'blocks/subscribe';
+@import 'blocks/friends';
+@import 'blocks/dialogs';
+@import 'blocks/gifts';

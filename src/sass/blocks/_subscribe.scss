@@ -1,0 +1,67 @@
+.subscribe {
+	position: relative;
+	margin-top: 16px;
+    // margin-left: 16px;
+	background-color: #fff;
+	width: 345px;
+	height: 74px;
+	border-radius: 12px;
+    padding: 8px;
+    &__wrapper {
+        position: relative;
+        height: 100%;
+        // padding: 0 16px;
+        border-radius: 12px;
+        &:hover {
+                    cursor: pointer;
+                    background-color: var(--hover-color);
+                    transition: 0.3s all;
+                }
+                &_head {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                }
+        &_content {
+            display: flex;
+            // justify-content: space-between;
+            padding: 10px 10px;
+        }
+        &_text {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &_detailed {
+            a {
+                font-size: 14px;
+                line-height: 16px;
+                color: var(--text-color-blue);
+                text-decoration: none;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &_close {
+            padding-left: 50px;
+            padding-bottom: 8px;
+            align-self: center;
+            svg  {
+                // background-color: grey;
+                width: 22px;
+            }
+            path {
+                background-color: grey;
+                fill: grey;
+            }
+            polygon {
+                background-color: grey;
+                fill: grey;
+            }
+        }
+    }
+}
