@@ -34,7 +34,8 @@ body {
     // display: flex;
     &__column1 {
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(32px, 433.5px);
+        // grid-template-rows: minmax(52px, 433.5px);
+        grid-template-rows: 433.5px 52px 150px;
         display: grid;
         row-gap: 16px;
     }

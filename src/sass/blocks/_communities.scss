@@ -4,6 +4,9 @@
     border-radius: 12px;
     background-color: #fff;
     margin-bottom: 30px;
+    &:hover {
+        cursor: pointer;
+    }
     &__header {
         display: flex;
         align-items: center;
@@ -46,6 +49,9 @@
             }
         }
         &_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             padding-bottom: 10px;
             padding-top: 10px;
             &_head {
