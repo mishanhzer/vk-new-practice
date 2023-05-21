@@ -33,7 +33,10 @@ body {
     row-gap: 16px;
     // display: flex;
     &__column1 {
-
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(32px, 433.5px);
+        display: grid;
+        row-gap: 16px;
     }
     &__column2 {
         grid-template-columns: 1fr;
@@ -58,3 +61,5 @@ body {
 @import 'blocks/friends';
 @import 'blocks/dialogs';
 @import 'blocks/gifts';
+@import 'blocks/yourcontent';
+@import 'blocks/communities';
