@@ -4,7 +4,7 @@
     border-radius: 12px;
     background-color: #fff;
     margin-bottom: 30px;
-    border: 0.5px solid #d3d9de;
+    border: 0.5px solid var(--border-color);
     &:hover {
         cursor: pointer;
     }

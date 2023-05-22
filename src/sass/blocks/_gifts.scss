@@ -3,7 +3,7 @@
     min-height: 148px;
     background-color: #fff;
     border-radius: 12px;
-    border: 0.5px solid #d3d9de;
+    border: 0.5px solid var(--border-color);
     padding: 8px;
     &__header {
         display: flex;
