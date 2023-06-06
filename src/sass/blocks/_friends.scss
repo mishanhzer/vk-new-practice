@@ -1,6 +1,6 @@
 .friends {
     width: 345px;
-    height: 305px;
+    height: 313px;
     background-color: #fff;
     border-radius: 12px;
     padding: 8px;
@@ -67,7 +67,7 @@
             height: 64px;
             border-radius: 100%;
             text-overflow: ellipsis;
-            overflow: hidden;
+            // overflow: hidden;
             white-space: nowrap;
             &:after {
                 content: '';
@@ -79,6 +79,16 @@
                 border-radius: inherit;
                 box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
             }
+            // &:before {
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     width: 30px;
+            //     height: 30px;
+            //     background-color: green;
+            //     z-index: 5;
+            // }
             &_background {
                 position: absolute;
                 left: 0;
@@ -86,6 +96,50 @@
                 width: 100%;
                 height: 100%;
                 border-radius: inherit;
+            }
+            &_pc {
+                z-index: 115;
+                position: absolute;
+                bottom: 5px;
+                right: 2px;
+                // transform: translate(50%,50%);
+                width: 12px;
+                height: 12px;
+                border-radius: 3px;
+                border: 2px solid #fff;
+                background-color: #4bb34b;
+                border-radius: 100%;
+                padding: 2px;
+            }
+            &_phone {
+                z-index: 115;
+                position: absolute;
+                bottom: 2px;
+                right: 3px;
+                // transform: translate(50%,50%);
+                width: 12px;
+                height: 16px;
+                border-radius: 3px;
+                background-color: #fff;
+                padding: 2px;
+                &_whitephone {
+                    width: 8px;
+                    height: 12px;
+                    background-color: #fff;
+                    border-top: 3px solid #4BB34B;
+                    border-bottom: 3px solid #4BB34B; 
+                    border-right: 1.5px solid #4BB34B;
+                    border-left: 1.5px solid #4BB34B;
+                    border-radius: 2px;
+                }
+                &_greendot {
+                    // position: absolute;
+                    // width: 8px;
+                    // height: 8px;
+                    // background-color: #4bb34b;
+                    // border-radius: 100%;
+                    // border: 3.5px solid #fff;
+                }
             }
             img {
                 position: relative;

@@ -1,0 +1,200 @@
+.myphoto {
+    width: 100%;
+    min-height: 700px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 0.5px solid var(--border-color);
+    &__divider {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    &__wrapper {
+        // padding: 18px 20px;
+    }
+    &__header {
+        display: flex;
+        padding: 18px 20px;
+        &_wrapper {
+            display: flex;
+            align-items: center;
+        }
+        &_allnotations {
+            height: 28px;
+            margin-right: 6px;
+            padding: 4px 8px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+            color: var(--text-color-blue);
+            &:hover {
+                cursor: pointer;
+                background-color: var(--hover-color);
+                transition: 0.15s all;
+            }
+            &_border {
+                border: 0.5px solid #dce1e6;
+		        box-shadow: var(0 4px 8px rgba(0,0,0,.04),0 0 4px rgba(0,0,0,.06));
+                border-radius: 8px;
+            }
+        }
+        &_mynotations {
+            margin-right: 6px;
+            padding: 4px 8px;
+            color: var(--text-color-grey);
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 8px;
+            &:hover {
+                cursor: pointer;
+                background-color: var(--hover-color);
+                transition: 0.15s all;
+            }
+        }
+        &_archivenotations {
+            margin-right: 6px;
+            padding: 4px 8px;
+            color: var(--text-color-grey);
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 8px;
+            &:hover {
+                cursor: pointer;
+                background-color: var(--hover-color);
+                transition: 0.15s all;
+            }
+        }
+        &_finder {
+            margin-left: auto;
+            color: var(--text-color-grey);
+            font-size: 14px;
+            line-height: 20px;
+            svg {
+                &:hover {
+                    cursor: pointer;
+                    color: #6f7985;
+                }
+            }
+        }
+    }
+    &__content {
+        &_header {
+            padding: 16px 20px 0px 20px;
+            display: flex;
+            align-items: center;
+            &_avatar {
+                margin-right: 12px;
+                img {
+                    width: 40px;
+                    border-radius: 100%;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            &_name {
+                display: flex;
+                flex-direction: column;
+            }
+            &_top {
+                display: flex;
+                align-items: center;
+                height: 16px;
+            }
+            &_fullname {
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 16px;
+                color: #2A5885;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+            &_icon {
+                margin-left: 4px;
+                img {
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            &_bottom {
+                display: flex;
+                margin-top: 2px;
+                align-items: center;
+            }
+            &_date {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                color: var(--text-color-grey);
+                margin-right: 3px;
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+            &_dot {
+                margin: 0px 3px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                color: var(--text-color-grey);
+            }
+            &_updatephoto {
+                margin-left: 3px;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                color: var(--text-color-grey);
+            }
+            &_threedots {
+                margin-left: auto;
+                svg {
+                    color: #AEB7C2;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        &_photo {
+            &_wrapper {
+                padding: 0px 20px;
+            }
+            &_border {
+                margin-top: 12px;
+                position: relative;
+                border-radius: 8px;
+                height: 510px;
+                width: 100%;
+                overflow: hidden;
+                // background: url('https://sun9-6.userapi.com/impf/c851332/v851332595/12bfb5/DpiH0uV0AgI.jpg?size=720x960&quality=96&sign=3e9d9aae13d7925c4c53957fb8f67353&c_uniq_tag=qhleMMDt_NXrYQxdLK88zqwuXFzAbrMnYUNV-bpxUKw&type=album') no-repeat center/cover;
+                // filter: blur(5px);
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: url('https://sun9-6.userapi.com/impf/c851332/v851332595/12bfb5/DpiH0uV0AgI.jpg?size=720x960&quality=96&sign=3e9d9aae13d7925c4c53957fb8f67353&c_uniq_tag=qhleMMDt_NXrYQxdLK88zqwuXFzAbrMnYUNV-bpxUKw&type=album') no-repeat center/cover;
+                    filter: blur(65px);
+                }
+            }
+            &_blur {
+                z-index: 5;
+                position: relative;
+                height: inherit;
+                width: inherit;
+            }
+            &_main {
+                position: absolute;
+                height: inherit;
+                width: inherit;
+                background: url('https://sun9-6.userapi.com/impf/c851332/v851332595/12bfb5/DpiH0uV0AgI.jpg?size=720x960&quality=96&sign=3e9d9aae13d7925c4c53957fb8f67353&c_uniq_tag=qhleMMDt_NXrYQxdLK88zqwuXFzAbrMnYUNV-bpxUKw&type=album') no-repeat center/75%;
+            }
+        }
+    }
+}

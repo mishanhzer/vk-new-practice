@@ -26,22 +26,25 @@ body {
 }
 
 .wrapper {
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 550px 345px;
-    grid-template-rows: minmax(32px, auto);
+    // grid-template-rows: minmax(32px, auto);
+    // grid-auto-rows: minmax(32px, auto);
     column-gap: 16px;
     row-gap: 16px;
-    // display: flex;
     &__column1 {
         grid-template-columns: 1fr;
-        // grid-template-rows: minmax(52px, 433.5px);
-        grid-template-rows: 433.5px 52px 150px;
+        // grid-template-rows: minmax(51px, auto);
+        grid-template-rows: 417.5px 52px 700px;
+        grid-auto-rows: minmax(52px, auto);
         display: grid;
         row-gap: 16px;
     }
     &__column2 {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, minmax(32px, auto));
+        grid-template-rows: 74px 313px 191px 358px;
+        grid-auto-rows: minmax(74px, auto);
         display: grid;
         row-gap: 16px;
     }
@@ -64,4 +67,5 @@ body {
 @import 'blocks/gifts';
 @import 'blocks/yourcontent';
 @import 'blocks/communities';
+@import 'blocks/myphoto';
 

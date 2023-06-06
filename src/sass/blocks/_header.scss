@@ -60,6 +60,9 @@
                 border: none;
                 outline: none;
             }
+            &:target {
+                background-color: #fff;
+            }
         }
         input::-webkit-input-placeholder {
                 color: var(--text-color-grey); 
