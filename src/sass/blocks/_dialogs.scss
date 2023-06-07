@@ -7,15 +7,103 @@
     background-color: #fff;
     border-radius: 8px 8px 0 0;
     border: 0.5px solid var(--border-color);
+    // overflow: hidden;
+    &__swap {
+        display: flex;
+        border: none;
+        background: none;
+        position: absolute;
+        bottom: 97%;
+        right: 0;
+        overflow: visible;
+        z-index: 60;
+        opacity: 0.7;
+        svg {
+            width: 20px;
+            transform: rotate(180deg);
+            // color: #99a2ad;
+            // fill: #99a2ad;
+        }
+        path {
+            stroke: #99a2ad;
+        }
+    }
     &__img {
+        position: relative;
         height: 52px;
-        width: 52px;
+        width: 51px;
         padding: 6px;
-        border-radius: 8px 8px 0 0;
+        overflow: hidden;
+        &_message {
+            z-index: 60;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            border-radius: 9px;
+            background-color: #447bba;
+            color: #fff;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+            text-align: center;
+        }
+        &_phone {
+            z-index: 50;
+            position: absolute;
+            bottom: 4px;
+            right: 5px;
+            // transform: translate(50%,50%);
+            width: 12px;
+            height: 16px;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 2px;
+            &_whitephone {
+                width: 8px;
+                height: 12px;
+                background-color: #fff;
+                border-top: 3px solid #4BB34B;
+                border-bottom: 3px solid #4BB34B; 
+                border-right: 1.5px solid #4BB34B;
+                border-left: 1.5px solid #4BB34B;
+                border-radius: 2px;
+            }
+        }
+        &_pc {
+            z-index: 50;
+            position: absolute;
+            bottom: 4px;
+            right: 5px;
+            // transform: translate(50%,50%);
+            width: 12.5px;
+            height: 12.5px;
+            border-radius: 3px;
+            border: 2px solid #fff;
+            background-color: #4bb34b;
+            border-radius: 100%;
+            padding: 2px;
+        }
         &:hover {
             cursor: pointer;
             background-color: var(--hover-color);
             transition: 0.15s ease-out;
+            border-radius: 8px 8px 0 0;
+            // overflow: hidden;
+            &:nth-child(3) {
+                background-color: var(--hover-color);
+                border-radius: 0;
+            }
+            &:nth-child(4) {
+                background-color: var(--hover-color);
+                border-radius: 0;
+            }
+            &:nth-child(5) {
+                background-color: var(--hover-color);
+                border-radius: 0;
+            }
         }
         img {
             width: 40px;
